@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Productos - TechSmart</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link rel="shortcut icon" href="img/icono.png" />
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i> +58 414-227-9708</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> YTLeandroguerra100YT@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> Caracas, Venezuela</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>  
+						<li><a href="cuenta.html"><i class="fa fa-user-o"></i> Cuenta</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="./img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0"></option>
+										<option value="1">Telefono</option>
+										<option value="1">Computadoras</option>
+									</select>
+									<input class="input" placeholder="">
+									<button class="search-btn">Buscar</button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a href="carrito.html"  class="dropdown-toggle">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Carrito</span>
+										<div class="qty">0</div>
+									</a>
+								<!-- /Cart -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="productos.html">Productos</a></li>
+						<li><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+			
+
+<!-- STORE PRODUCTS -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Productos</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/telefonos/Apple-iPhone-16-Pro-Max-Black-Titanium-frontimage.webp" alt="iPhone 16 Pro Max">
+                    <div class="product-label">
+                        <span class="new">NEW</span>
+                    </div>
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Teléfonos</p>
+                    <h3 class="product-name"><a href="#">iPhone 16 Pro Max</a></h3>
+                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('iPhone 16 Pro Max', 980.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 1 -->
+
+        <!-- Producto 2 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/telefonos/Google-Pixel-9-Obsidian-frontimage.webp" alt="Google Pixel 9">
+                    <div class="product-label">
+                        <span class="new">NEW</span>
+                    </div>
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Teléfonos</p>
+                    <h3 class="product-name"><a href="#">Google Pixel 9</a></h3>
+                    <h4 class="product-price">$800.00 <del class="product-old-price">$850.00</del></h4>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Google Pixel 9', 800.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 2 -->
+
+        <!-- Producto 3 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/telefonos/Motorola-moto-g-power-5G-2025-Slate-Gray-frontimage_v4.webp" alt="Motorola Moto G Power">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Teléfonos</p>
+                    <h3 class="product-name"><a href="#">Motorola Moto G Power</a></h3>
+                    <h4 class="product-price">$300.00 <del class="product-old-price">$350.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Motorola Moto G Power', 300.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 3 -->
+
+        <!-- Producto 4 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/telefonos/Samsung-Galaxy-A16-5G-Blue-Black-frontimage.webp" alt="Samsung Galaxy A16">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Teléfonos</p>
+                    <h3 class="product-name"><a href="#">Samsung Galaxy A16</a></h3>
+                    <h4 class="product-price">$400.00 <del class="product-old-price">$450.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy A16', 400.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 4 -->
+
+        <!-- Producto 5 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/tablets/Apple-iPad-Air-11-inch-M3-Blue-frontimage.webp" alt="Apple iPad Air">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Tablets</p>
+                    <h3 class="product-name"><a href="#">Apple iPad Air</a></h3>
+                    <h4 class="product-price">$600.00 <del class="product-old-price">$650.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Apple iPad Air', 600.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 5 -->
+
+        <!-- Producto 6 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/tablets/Samsung-Galaxy-Tab-S10-Plus-Gray-frontimage.webp" alt="Samsung Galaxy Tab S10 Plus">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Tablets</p>
+                    <h3 class="product-name"><a href="#">Samsung Galaxy Tab S10 Plus</a></h3>
+                    <h4 class="product-price">$700.00 <del class="product-old-price">$750.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy Tab S10 Plus', 700.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 6 -->
+
+        <!-- Producto 7 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/tablets/TCL-TAB-8-LE-Shadow-Gray-frontimage.webp" alt="TCL TAB 8">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Tablets</p>
+                    <h3 class="product-name"><a href="#">TCL TAB 8</a></h3>
+                    <h4 class="product-price">$250.00 <del class="product-old-price">$300.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('TCL TAB 8', 250.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 7 -->
+
+        <!-- Producto 8 -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/reloj/Samsung-Galaxy-Watch6-44MM-Graphite-frontimage.webp" alt="Samsung Galaxy Watch 6">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Relojes</p>
+                    <h3 class="product-name"><a href="#">Samsung Galaxy Watch 6</a></h3>
+                    <h4 class="product-price">$350.00 <del class="product-old-price">$400.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy Watch 6', 350.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 8 -->
+
+		        <!-- Producto 9: Samsung Galaxy S25 Icy Blue -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/telefonos/Samsung-Galaxy-S25-Icyblue-frontimage.webp" alt="Samsung Galaxy S25 Icy Blue">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Teléfonos</p>
+							<h3 class="product-name"><a href="#">Samsung Galaxy S25 Icy Blue</a></h3>
+							<h4 class="product-price">$900.00 <del class="product-old-price">$950.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy S25 Icy Blue', 900.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 9 -->
+		
+				<!-- Producto 10: Samsung Galaxy S25 Ultra Titanium Silver Blue -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/telefonos/Samsung-Galaxy-S25-Ultra-Titanium-Silverblue-frontimage.webp" alt="Samsung Galaxy S25 Ultra Titanium Silver Blue">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Teléfonos</p>
+							<h3 class="product-name"><a href="#">Samsung Galaxy S25 Ultra Titanium Silver Blue</a></h3>
+							<h4 class="product-price">$1200.00 <del class="product-old-price">$1250.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy S25 Ultra Titanium Silver Blue', 1200.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 10 -->
+		
+				<!-- Producto 11: Google Pixel 9 Pro Porcelain -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/telefonos/Google-Pixel-9-Pro-Porcelain-frontimage.webp" alt="Google Pixel 9 Pro Porcelain">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Teléfonos</p>
+							<h3 class="product-name"><a href="#">Google Pixel 9 Pro Porcelain</a></h3>
+							<h4 class="product-price">$950.00 <del class="product-old-price">$1000.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Google Pixel 9 Pro Porcelain', 950.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 11 -->
+		
+				<!-- Producto 12: Accesorio 1 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc1.webp" alt="Accesorio 1">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 1</a></h3>
+							<h4 class="product-price">$50.00 <del class="product-old-price">$60.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 1', 50.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 12 -->
+		
+				<!-- Producto 13: Accesorio 2 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc2.webp" alt="Accesorio 2">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 2</a></h3>
+							<h4 class="product-price">$40.00 <del class="product-old-price">$50.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 2', 40.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 13 -->
+		
+				<!-- Producto 14: Accesorio 3 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc3.webp" alt="Accesorio 3">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 3</a></h3>
+							<h4 class="product-price">$30.00 <del class="product-old-price">$35.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 3', 30.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 14 -->
+		
+				<!-- Producto 15: Accesorio 4 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc4.webp" alt="Accesorio 4">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 4</a></h3>
+							<h4 class="product-price">$20.00 <del class="product-old-price">$25.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 4', 20.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 15 -->
+		
+				<!-- Producto 16: Accesorio 5 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc5.webp" alt="Accesorio 5">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 5</a></h3>
+							<h4 class="product-price">$15.00 <del class="product-old-price">$20.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 5', 15.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 16 -->
+		
+				<!-- Producto 17: Accesorio 6 -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/accesorios/acc6.webp" alt="Accesorio 6">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Accesorios</p>
+							<h3 class="product-name"><a href="#">Accesorio 6</a></h3>
+							<h4 class="product-price">$10.00 <del class="product-old-price">$15.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Accesorio 6', 10.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 17 -->
+		
+				<!-- Producto 18: Samsung Galaxy Watch Ultra 47MM -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/reloj/Samsung-Galaxy-Watch-Ultra-47MM-Gray-frontimage.webp" alt="Samsung Galaxy Watch Ultra 47MM">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Relojes</p>
+							<h3 class="product-name"><a href="#">Samsung Galaxy Watch Ultra 47MM</a></h3>
+							<h4 class="product-price">$500.00 <del class="product-old-price">$550.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy Watch Ultra 47MM', 500.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 18 -->
+		 
+        <!-- Producto 19: Samsung Galaxy Watch 6 Classic 47MM -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/reloj/Samsung-Galaxy-Watch6-Classic-47MM-Silver-frontimage.webp" alt="Samsung Galaxy Watch 6 Classic 47MM">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Relojes</p>
+                    <h3 class="product-name"><a href="#">Samsung Galaxy Watch 6 Classic 47MM</a></h3>
+                    <h4 class="product-price">$450.00 <del class="product-old-price">$500.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy Watch 6 Classic 47MM', 450.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 19 -->
+
+        <!-- Producto 20: Apple Watch Series 10 46mm -->
+        <div class="col-md-4 col-xs-6">
+            <div class="product">
+                <div class="product-img">
+                    <img src="./img/reloj/Apple-Watch-Series-10-46mm-Jet-Black-Aluminum-Black-Sport-Band-frontimage.webp" alt="Apple Watch Series 10 46mm">
+                </div>
+                <div class="product-body">
+                    <p class="product-category">Relojes</p>
+                    <h3 class="product-name"><a href="#">Apple Watch Series 10 46mm</a></h3>
+                    <h4 class="product-price">$400.00 <del class="product-old-price">$450.00</del></h4>
+                    <div class="product-rating">
+                    </div>
+                    <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Apple Watch Series 10 46mm', 400.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Producto 20 -->
+
+		        <!-- Producto 19: Samsung Galaxy Watch 6 Classic 47MM -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/reloj/Samsung-Galaxy-Watch6-Classic-47MM-Silver-frontimage.webp" alt="Samsung Galaxy Watch 6 Classic 47MM">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Relojes</p>
+							<h3 class="product-name"><a href="#">Samsung Galaxy Watch 6 Classic 47MM</a></h3>
+							<h4 class="product-price">$450.00 <del class="product-old-price">$500.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Samsung Galaxy Watch 6 Classic 47MM', 450.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 19 -->
+		
+				<!-- Producto 20: Apple Watch Series 10 46mm -->
+				<div class="col-md-4 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="./img/reloj/Apple-Watch-Series-10-46mm-Jet-Black-Aluminum-Black-Sport-Band-frontimage.webp" alt="Apple Watch Series 10 46mm">
+						</div>
+						<div class="product-body">
+							<p class="product-category">Relojes</p>
+							<h3 class="product-name"><a href="#">Apple Watch Series 10 46mm</a></h3>
+							<h4 class="product-price">$400.00 <del class="product-old-price">$450.00</del></h4>
+							<div class="product-rating">
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Agregar a Wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Agregar a Comparar</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista Rápida</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn" onclick="agregarAlCarrito('Apple Watch Series 10 46mm', 400.00)"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<!-- /Producto 20 -->
+    </div>
+</div>
+<!-- /STORE PRODUCTS -->
+
+						<!-- store bottom filter -->
+						<div class="store-filter clearfix">
+							<span class="store-qty">Showing 20-100 products</span>
+							<ul class="store-pagination">
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+						<!-- /store bottom filter -->
+					</div>
+					<!-- /STORE -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<ul class="newsletter-follow">
+								<li>
+									<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="https://www.x.com"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Sobre Nosotros</h3>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere vitae consectetur aliquid autem quasi, cumque cum pariatur eaque accusantium, praesentium vel animi alias veniam dolores repellendus beatae veritatis non deleniti.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Caracas, Venezuela</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+58 414-227-97 08</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>YTLeandroguerra100YT@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Los más vendidos</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Telefono</a></li>
+									<li><a href="#">Tablets</a></li>
+									<li><a href="#">Reloj</a></li>
+									<li><a href="#">Accessorios</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Información</h3>
+								<ul class="footer-links">
+									<li><a href="#">Nosotros</a></li>
+									<li><a href="#">Contactame</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Servicios</h3>
+								<ul class="footer-links">
+									<li><a href="#">Cuenta</a></li>
+									<li><a href="#">Carrito</a></li>
+									<li><a href="#">Registro</a></li>
+									<li><a href="#">Login</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<div class="text-center p-3" style="color: white">
+									Todos los derechos reservados TechSmart 2025.
+									<br>Realizado por <em>Leandro Marquez</em>
+								</div>
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
